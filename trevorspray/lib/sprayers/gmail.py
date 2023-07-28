@@ -14,8 +14,8 @@ class SprayModule(BaseSprayModule):
     default_url = 'https://accounts.google.com'
     # body of request
     request_data = { 
-		  "username": "{username}",
-                  "password": "{password}",
+		  "username": "{identifier}",
+                  "password": "{Passwd}",
 }
     # HTTP headers
     headers = {}
