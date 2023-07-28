@@ -9,9 +9,9 @@ log = logging.getLogger("trevorspray.sprayers.gmail")
 class SprayModule(BaseSprayModule):
 
     # HTTP method
-    method = 'GET'
+    #method = 'GET'
     # default target URL
-    default_url = 'https://accounts.google.com'
+    default_url = 'imap.google.com'
     # body of request
     request_data = { 
 		  "username": "{username}",
