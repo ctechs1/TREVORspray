@@ -11,7 +11,7 @@ class SprayModule(BaseSprayModule):
     # HTTP method
     method = 'GET'
     # default target URL
-    default_url = 'https://accounts.google.com/v3/signin/identifier?'
+    default_url = 'https://accounts.google.com'
     # body of request
     request_data = { 
 		  "username": "{username}",
