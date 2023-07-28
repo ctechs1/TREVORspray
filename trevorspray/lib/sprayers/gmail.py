@@ -9,7 +9,7 @@ log = logging.getLogger("trevorspray.sprayers.gmail")
 class SprayModule(BaseSprayModule):
 
     # HTTP method
-    method = 'POST'
+    method = 'GET'
     # default target URL
     default_url = 'https://accounts.google.com/v3/signin/identifier?'
     # body of request
