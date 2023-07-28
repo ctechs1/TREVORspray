@@ -8,16 +8,8 @@ class SprayModule(BaseSprayModule):
     default_url = 'https://accounts.google.com'
     # body of request
     request_data = { 
-		'username': username,
-		'password': password,
-		'success': False,
-		'change': False,
-		'2fa_enabled': False,
-		'type': None,
-		'code': None,
-		'name': None,
-		'action': None,
-		
+		  "username": "{username}",
+                  "password": "{password}",
 }
     # HTTP headers
     headers = {}
