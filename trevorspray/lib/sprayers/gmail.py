@@ -5,7 +5,7 @@ class SprayModule(BaseSprayModule):
     # HTTP method
     method = 'POST'
     # default target URL
-    default_url = 'imap.gmail.com:993'
+    default_url = 'https://accounts.google.com/v3/signin/identifier?dsh=S100793188%3A1690546893694417&elo=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AeDOFXgDD24mtKXMI7Ivtd24pjnrEFB1j-eATt3i_bPyZKgfOqVQp0G26Wt5Be_UJl0FwBTQYSYlkg'
     # body of request
     request_data = { 
         "username": "{username}",
@@ -21,19 +21,6 @@ class SprayModule(BaseSprayModule):
     headers = {
         'User-Agent': 'Your Moms Smart Vibrator',
     }
-
-    def initialize(self):
-        '''
-        Get additional arguments from user at runtime
-        NOTE: These can also be passed via environment variables beginning with "TREVOR_":
-            TREVOR_otherthing=asdf
-        '''
-        while not self.trevor.runtimeparams.get('otherthing', ''):
-            self.trevor.runtimeparams.update({
-                'otherthing': input("What's that other thing? ")
-            })
-
-        return True
 
 
     def check_response(self, response):
