@@ -8,16 +8,17 @@ class SprayModule(BaseSprayModule):
     default_url = 'https://accounts.google.com'
     # body of request
     request_data = { 
-    "username": {"type": "XPATH", "value": '//*[@id="identifierId"]'},
-    "password": {"type": "NAME", "value": "password"},
-    "button_next": {
-        "type": "XPATH",
-        "value": (
-            "/html/body/div[1]/div[1]/div[2]/div/div[2]/"
-            "div/div/div[2]/div/div[2]/div/div[1]/div/div/button"
-        ),
-    },
-    "captcha": {"type": "XPATH", "value": '//*[@id="captchaimg"]'},
+    'timestamp': ts,
+		'username': username,
+		'password': password,
+		'success': False,
+		'change': False,
+		'2fa_enabled': False,
+		'type': None,
+		'code': None,
+		'name': None,
+		'action': None,
+		
 }
     # HTTP headers
     headers = {}
