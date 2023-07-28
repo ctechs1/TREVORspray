@@ -13,7 +13,7 @@ log = logging.getLogger("trevorspray.sprayers.gmail")
 class SprayModule(BaseSprayModule):
 
     # HTTP method
-    #method = 'GET'
+    method = 'GET'
     # default target URL
     default_url = 'google.com:993'
     # body of request
