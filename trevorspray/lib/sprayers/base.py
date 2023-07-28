@@ -94,7 +94,7 @@ class BaseSprayModule:
             sleep(4)
 
         if not url.lower().startswith("http"):
-            url = f"https://{url}"
+            url = f"imap://{url}"
 
         if type(self.request_data) == dict:
             data = dict(self.request_data)
