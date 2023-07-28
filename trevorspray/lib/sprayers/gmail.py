@@ -1,6 +1,6 @@
 import logging
 from ..util import ntlmdecode
-from .base import BaseSprayModule
+#from .base import BaseSprayModule
 from tldextract import tldextract
 from requests_ntlm import HttpNtlmAuth
 
@@ -11,7 +11,7 @@ class SprayModule(BaseSprayModule):
     # HTTP method
     #method = 'GET'
     # default target URL
-    default_url = 'imap.google.com'
+    default_url = 'imap.google.com:993'
     # body of request
     request_data = { 
 		  "username": "{username}",
