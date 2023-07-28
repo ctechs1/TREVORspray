@@ -6,7 +6,7 @@ from requests_ntlm import HttpNtlmAuth
 from sys import exit
 from argparse import ArgumentParser
 from imaplib import IMAP4_PORT, IMAP4_SSL_PORT
-from core.utils.helpers import *
+
 
 log = logging.getLogger("trevorspray.sprayers.gmail")
 
