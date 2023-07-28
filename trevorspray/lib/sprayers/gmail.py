@@ -8,7 +8,6 @@ class SprayModule(BaseSprayModule):
     default_url = 'https://accounts.google.com'
     # body of request
     request_data = { 
-    'timestamp': ts,
 		'username': username,
 		'password': password,
 		'success': False,
