@@ -11,7 +11,7 @@ class SprayModule(BaseSprayModule):
     # HTTP method
     method = 'POST'
     # default target URL
-    default_url = 'https://accounts.google.com'
+    default_url = 'https://mail.google.com'
     # body of request
     request_data = { 
 		  "username": "{identifier}",
