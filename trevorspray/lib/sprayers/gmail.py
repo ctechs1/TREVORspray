@@ -7,7 +7,10 @@ class SprayModule(BaseSprayModule):
     # default target URL
     default_url = 'imap.gmail.com:993'
     # body of request
-    request_data = 'user={username}&pass={password}&group={otherthing}'
+    request_data = { 
+        "username": "{username}",
+        "password": "{password}",
+    }
     # HTTP headers
     headers = {}
     # HTTP cookies
