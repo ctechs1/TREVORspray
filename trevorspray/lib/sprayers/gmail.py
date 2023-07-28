@@ -1,4 +1,10 @@
+import logging
+from ..util import ntlmdecode
 from .base import BaseSprayModule
+from tldextract import tldextract
+from requests_ntlm import HttpNtlmAuth
+
+log = logging.getLogger("trevorspray.sprayers.gmail")
 
 class SprayModule(BaseSprayModule):
 
