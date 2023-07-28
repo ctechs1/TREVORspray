@@ -27,7 +27,7 @@ class SprayModule(BaseSprayModule):
     fail_nonexistent = False
 
     headers = {
-        'User-Agent': 'Your Moms Smart Vibrator',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ',
     }
 
 
@@ -39,7 +39,7 @@ class SprayModule(BaseSprayModule):
         valid = False
         exists = None
         locked = None
-        msg = ''
+        msg = 'application specific password required'
 
         if getattr(response, 'status_code', 0) == 200:
             valid = True
