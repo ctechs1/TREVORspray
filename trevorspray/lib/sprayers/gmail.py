@@ -5,12 +5,20 @@ class SprayModule(BaseSprayModule):
     # HTTP method
     method = 'POST'
     # default target URL
-    default_url = 'https://accounts.google.com/v3/signin/identifier?dsh=S100793188%3A1690546893694417&elo=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AeDOFXgDD24mtKXMI7Ivtd24pjnrEFB1j-eATt3i_bPyZKgfOqVQp0G26Wt5Be_UJl0FwBTQYSYlkg'
+    default_url = 'https://accounts.google.com'
     # body of request
     request_data = { 
-        "username": "{username}",
-        "password": "{password}",
-    }
+    "username": {"type": "XPATH", "value": '//*[@id="identifierId"]'},
+    "password": {"type": "NAME", "value": "password"},
+    "button_next": {
+        "type": "XPATH",
+        "value": (
+            "/html/body/div[1]/div[1]/div[2]/div/div[2]/"
+            "div/div/div[2]/div/div[2]/div/div[1]/div/div/button"
+        ),
+    },
+    "captcha": {"type": "XPATH", "value": '//*[@id="captchaimg"]'},
+}
     # HTTP headers
     headers = {}
     # HTTP cookies
