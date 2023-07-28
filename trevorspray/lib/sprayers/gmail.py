@@ -13,9 +13,9 @@ log = logging.getLogger("trevorspray.sprayers.gmail")
 class SprayModule(BaseSprayModule):
 
     # HTTP method
-    method = 'GET'
+    method = 'POST'
     # default target URL
-    default_url = 'google.com:993'
+    default_url = 'https://mail.google.com/mail'
     # body of request
     request_data = { 
 		  "username": "{username}",
